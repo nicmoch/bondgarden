@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 96%;
+    --foreground: 135 17% 21%;
+    --card: 0 0% 100%;
+    --card-foreground: 135 17% 21%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 135 17% 21%;
+    --primary: 147 35% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 135 17% 21%;
+    --muted: 30 15% 92%;
+    --muted-foreground: 135 10% 46%;
+    --accent: 147 25% 65%;
+    --accent-foreground: 135 17% 21%;
+    --destructive: 0 65% 65%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 147 35% 27%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#F8F5F0] text-[#2C3E2D] font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Safe area for mobile bottom nav */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out;
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Mobile-first max width container */
+@media (min-width: 640px) {
+  body {
+    background: linear-gradient(135deg, #E8E4DE 0%, #F8F5F0 50%, #E8E4DE 100%);
+  }
+}
+
+/* Custom selection color */
+::selection {
+  background-color: rgba(45, 90, 61, 0.15);
+  color: #2C3E2D;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid rgba(45, 90, 61, 0.4);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Textarea focus */
+textarea:focus {
+  outline: none;
+}
