@@ -1,0 +1,30 @@
+{
+    "title": "needs_catalog",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "name": {
+            "type": "string",
+            "description": "Need name e.g. affection, admiration"
+        },
+        "description": {
+            "type": "string",
+            "description": "Description of the need"
+        },
+        "icon": {
+            "type": "string",
+            "description": "Emoji icon for the need"
+        },
+        "is_default": {
+            "type": "boolean",
+            "description": "Whether this is a default need"
+        }
+    },
+    "required": [
+        "id",
+        "name"
+    ]
+}
