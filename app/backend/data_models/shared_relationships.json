@@ -1,0 +1,50 @@
+{
+    "title": "shared_relationships",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Inviter user ID"
+        },
+        "partner_user_id": {
+            "type": "string",
+            "description": "Invited partner user ID"
+        },
+        "person_id": {
+            "type": "integer",
+            "description": "FK to people (inviter's person record)"
+        },
+        "partner_person_id": {
+            "type": "integer",
+            "description": "FK to people (partner's person record for inviter)"
+        },
+        "invite_code": {
+            "type": "string",
+            "description": "Unique invite code"
+        },
+        "status": {
+            "type": "string",
+            "description": "pending, accepted, declined"
+        },
+        "sharing_mode": {
+            "type": "string",
+            "description": "share_all or share_only_leaves"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "person_id",
+        "invite_code",
+        "status"
+    ]
+}
