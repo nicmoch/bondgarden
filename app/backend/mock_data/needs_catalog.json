@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Affection",
+        "description": "Physical and emotional warmth, hugs, closeness",
+        "icon": "💕",
+        "is_default": true
+    },
+    {
+        "name": "Admiration",
+        "description": "Recognition, praise, and appreciation",
+        "icon": "⭐",
+        "is_default": true
+    },
+    {
+        "name": "Conversation",
+        "description": "Meaningful dialogue and active listening",
+        "icon": "💬",
+        "is_default": true
+    },
+    {
+        "name": "Emotional Support",
+        "description": "Being there during difficult times",
+        "icon": "🤗",
+        "is_default": true
+    },
+    {
+        "name": "Honesty",
+        "description": "Transparency, truthfulness, and openness",
+        "icon": "💎",
+        "is_default": true
+    },
+    {
+        "name": "Family Commitment",
+        "description": "Prioritizing family time and responsibilities",
+        "icon": "🏡",
+        "is_default": true
+    },
+    {
+        "name": "Reassurance",
+        "description": "Comfort, security, and confidence building",
+        "icon": "🛡️",
+        "is_default": true
+    },
+    {
+        "name": "Practical Help",
+        "description": "Hands-on assistance with tasks and chores",
+        "icon": "🤝",
+        "is_default": true
+    },
+    {
+        "name": "Quality Time",
+        "description": "Undivided attention and shared experiences",
+        "icon": "⏰",
+        "is_default": true
+    },
+    {
+        "name": "Physical Affection",
+        "description": "Touch, intimacy, and physical closeness",
+        "icon": "🫂",
+        "is_default": true
+    }
+]
