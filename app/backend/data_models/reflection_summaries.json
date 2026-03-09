@@ -1,0 +1,48 @@
+{
+    "title": "reflection_summaries",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "reflection_type": {
+            "type": "string",
+            "description": "weekly, given_garden, shared_garden, personal_growth"
+        },
+        "period_start": {
+            "type": "string",
+            "format": "date",
+            "description": "Start of reflection period"
+        },
+        "period_end": {
+            "type": "string",
+            "format": "date",
+            "description": "End of reflection period"
+        },
+        "summary_text": {
+            "type": "string",
+            "description": "AI-generated reflection summary"
+        },
+        "highlights": {
+            "type": "string",
+            "description": "JSON string of key highlights"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "reflection_type",
+        "period_start",
+        "period_end"
+    ]
+}
