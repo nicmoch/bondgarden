@@ -1,0 +1,44 @@
+{
+    "title": "people",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "name": {
+            "type": "string",
+            "description": "Person name"
+        },
+        "relationship_type": {
+            "type": "string",
+            "description": "e.g. spouse, friend, family, coworker, acquaintance"
+        },
+        "avatar_emoji": {
+            "type": "string",
+            "description": "Emoji avatar for the person"
+        },
+        "is_given_garden": {
+            "type": "boolean",
+            "description": "Whether in Given Garden"
+        },
+        "is_archived": {
+            "type": "boolean",
+            "description": "Whether archived from Given Garden"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "name"
+    ]
+}
