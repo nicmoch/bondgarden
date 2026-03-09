@@ -1,0 +1,47 @@
+{
+    "title": "journal_entries",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "entry_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of the journal entry"
+        },
+        "content": {
+            "type": "string",
+            "description": "Journal text content"
+        },
+        "mood": {
+            "type": "string",
+            "description": "Overall mood: happy, calm, neutral, sad, anxious, angry"
+        },
+        "mood_score": {
+            "type": "integer",
+            "description": "Mood score 1-10"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Updated timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "entry_date",
+        "content"
+    ]
+}
