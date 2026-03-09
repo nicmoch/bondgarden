@@ -1,0 +1,49 @@
+{
+    "title": "relationship_scores",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "person_id": {
+            "type": "integer",
+            "description": "FK to people"
+        },
+        "balance_score": {
+            "type": "number",
+            "description": "Long-term relationship balance"
+        },
+        "health_score": {
+            "type": "number",
+            "description": "Recent weighted health score"
+        },
+        "needs_score": {
+            "type": "number",
+            "description": "Given Garden needs fulfillment score"
+        },
+        "trend": {
+            "type": "string",
+            "description": "growing, stable, declining"
+        },
+        "last_interaction_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of last interaction"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last recalculated timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "person_id"
+    ]
+}
