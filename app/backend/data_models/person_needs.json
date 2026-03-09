@@ -1,0 +1,40 @@
+{
+    "title": "person_needs",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "person_id": {
+            "type": "integer",
+            "description": "FK to people"
+        },
+        "need_id": {
+            "type": "integer",
+            "description": "FK to needs_catalog"
+        },
+        "custom_need_name": {
+            "type": "string",
+            "description": "Custom need name if not from catalog"
+        },
+        "priority": {
+            "type": "integer",
+            "description": "Priority order 1-10"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "person_id"
+    ]
+}
