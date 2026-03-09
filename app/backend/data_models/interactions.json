@@ -1,0 +1,54 @@
+{
+    "title": "interactions",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Owner user ID"
+        },
+        "journal_entry_id": {
+            "type": "integer",
+            "description": "FK to journal_entries"
+        },
+        "person_id": {
+            "type": "integer",
+            "description": "FK to people"
+        },
+        "sentiment": {
+            "type": "string",
+            "description": "very_positive, positive, slightly_positive, neutral, slightly_negative, negative, very_negative"
+        },
+        "intensity": {
+            "type": "integer",
+            "description": "Intensity 1-5"
+        },
+        "score": {
+            "type": "integer",
+            "description": "Calculated score based on sentiment"
+        },
+        "personal_note": {
+            "type": "string",
+            "description": "Optional personal note about the interaction"
+        },
+        "is_ignored": {
+            "type": "boolean",
+            "description": "Whether user chose to ignore this interaction"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Created timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "journal_entry_id",
+        "person_id",
+        "sentiment"
+    ]
+}
